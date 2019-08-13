@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>BroSolutions_CustomBackground</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Site Background Management</summary>
+    <description>Extension allows to easy manage body background styles for different Magento's pages</description>
+    <notes>- CMS, Product, Category, Home,Cart and Checkout pages management&#xD;
+- Custom styles&#xD;
+- Custom body selector </notes>
+    <authors><author><name>Alex</name><user>silyadev</user><email>silyadev@gmail.com</email></author></authors>
+    <date>2015-04-06</date>
+    <time>08:32:13</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="BroSolutions_CustomBackground.xml" hash="fd8564f260811ab0cb216e34a4807a76"/></dir></target><target name="magelocal"><dir name="BroSolutions"><dir name="CustomBackground"><dir name="Block"><dir name="Adminhtml"><dir name="Background"><dir name="Edit"><file name="Form.php" hash="1955003427d97afdfec3f45e51c808f7"/><dir name="Tab"><file name="Form.php" hash="2b3924af370e3530a7dec18c48d19689"/><file name="Stores.php" hash="60044040bd04a2b4bd5306145b6f7651"/></dir><file name="Tabs.php" hash="e6812a295272d6a03bcbbf9e33609e3c"/></dir><file name="Edit.php" hash="8c564addf37ba36e3d9498b04adf931f"/><file name="Grid.php" hash="f65fe5ebd21f5d933f90a9ad0b9fb682"/><dir name="Helper"><file name="Image.php" hash="f3afd5a7c960be3c33ddd086a9a9ba78"/></dir></dir><file name="Background.php" hash="c083a98aaa0fc7c2079c4eebfaea33da"/></dir><file name="Background.php" hash="aff336520053dcf2c9dced34b11d9094"/></dir><dir name="Controller"><dir name="Adminhtml"><file name="CustomBackground.php" hash="2933b0b527c03bc5b779661cfc7ccdbd"/></dir></dir><dir name="Helper"><dir name="Background"><file name="Image.php" hash="107791f7a251e6b024b64e93d7501619"/></dir><file name="Background.php" hash="0991f4266b4557db46c96083816e52a3"/><file name="Data.php" hash="542e49c132a0cc29d42207c486425349"/><dir name="Image"><file name="Abstract.php" hash="a278ee6e7409925e9299637a3ae21479"/></dir></dir><dir name="Model"><dir name="Background"><dir name="Attribute"><dir name="Source"><file name="Targettype.php" hash="b1350e6ae472b58bdff8678afb35e545"/></dir></dir></dir><file name="Background.php" hash="3cb7b611bebe104da2d72605317f52b9"/><dir name="Resource"><dir name="Background"><file name="Collection.php" hash="869d62a6b4e9bd09b054265b6f550f08"/></dir><file name="Background.php" hash="2907f4af0ba1bbe133e11f19ffd44bc0"/><file name="Setup.php" hash="09d865248c0c43cdb5c6f228a55ed7c5"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Custombackground"><file name="BackgroundController.php" hash="aff8178595156ca09ec4709fdc28e3c4"/></dir></dir><file name="BackgroundController.php" hash="bcb4f0610443dd724635cd05402cb5cf"/></dir><dir name="etc"><file name="adminhtml.xml" hash="c9433a846f876fa6d015b12b708cf48d"/><file name="config.xml" hash="42d46b9b47b8629e47ae16c8341bd037"/><file name="system.xml" hash="e6a62b5df45f988b14cb914d27124f52"/></dir><dir name="sql"><dir name="brosolutions_custombackground_setup"><file name="install-1.0.0.php" hash="fad4bd8841906063870cb4e5cfcabcde"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="brosolutions_custombackground.xml" hash="18e4cf56d18e01a17a01ac3c5a213a40"/></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="brosolutions_custombackground.xml" hash="c8c4e587c13f7190e6b81466d42e1041"/></dir><dir name="template"><dir name="brosolutions"><dir name="custombackground"><file name="js.phtml" hash="ae2a33ab4e8bd62d5a8835f56f3f855f"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

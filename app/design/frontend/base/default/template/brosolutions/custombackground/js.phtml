@@ -1,0 +1,11 @@
+<?php if($this->isBackgroundNeeded()): ?>
+    <script>
+        if($$('<?php echo $this->getTargetElement() ?>').length>0){
+            $$('<?php echo $this->getTargetElement() ?>').each(function(element){
+                <?php foreach($this->getStyleOptions() as $style => $value): ?>
+                    element.setStyle({<?php echo $style ?>: '<?php echo $value ?>'});
+                <?php endforeach ?>    
+            })
+        }
+    </script>
+<?php endif ?>

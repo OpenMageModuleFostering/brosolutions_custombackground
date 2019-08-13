@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BroSolutions_CustomBackground extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       BroSolutions
+ * @package        BroSolutions_CustomBackground
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <brosolutions_custombackground translate="title" module="brosolutions_custombackground">
+                                        <title>CustomBackground</title>
+                                    </brosolutions_custombackground>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <system>
+                        <children>
+                            <brosolutions_custombackground translate="title" module="brosolutions_custombackground">
+                                <title>Background Management</title>
+                                <children>
+                                    <background translate="title" module="brosolutions_custombackground">
+                                        <title>Background</title>
+                                        <sort_order>0</sort_order>
+                                    </background>
+                                </children>
+                            </brosolutions_custombackground>                        </children>
+                    </system>
+
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <system>
+            <children>
+                <brosolutions_custombackground translate="title" module="brosolutions_custombackground">
+                    <title>Background Management</title>
+                    <sort_order>0</sort_order>
+                    <children>
+                        <background translate="title" module="brosolutions_custombackground">
+                            <title>Background</title>
+                            <action>adminhtml/custombackground_background</action>
+                            <sort_order>0</sort_order>
+                        </background>
+                    </children>
+                </brosolutions_custombackground>            </children>
+        </system>
+
+    </menu>
+</config>

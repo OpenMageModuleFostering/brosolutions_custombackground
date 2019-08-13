@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BroSolutions_CustomBackground extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       BroSolutions
+ * @package        BroSolutions_CustomBackground
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+--> 
+<layout>
+    <adminhtml_custombackground_background_index>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>system/brosolutions_custombackground/background</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="brosolutions_custombackground/adminhtml_background" name="background" />
+
+        </reference>
+    </adminhtml_custombackground_background_index>
+    <adminhtml_custombackground_background_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="brosolutions_custombackground/adminhtml_background_grid" name="background_grid"/>
+        </block>
+    </adminhtml_custombackground_background_grid>
+    <!-- Background add/edit action -->
+    <adminhtml_custombackground_background_edit>
+        <update handle="editor"/>
+        <reference name="head">
+            <action method="addItem"><type>js</type><name>jscolor/jscolor.js</name><params/><if/></action>
+        </reference>
+        <reference name="menu">
+            <action method="setActive">
+                <menupath>system/brosolutions_custombackground/background</menupath>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="brosolutions_custombackground/adminhtml_background_edit" name="background_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="brosolutions_custombackground/adminhtml_background_edit_tabs" name="background_tabs"></block>
+        </reference>
+    </adminhtml_custombackground_background_edit>
+
+</layout>

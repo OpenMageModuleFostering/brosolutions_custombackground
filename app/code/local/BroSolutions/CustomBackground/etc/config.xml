@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BroSolutions_CustomBackground extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       BroSolutions
+ * @package        BroSolutions_CustomBackground
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <BroSolutions_CustomBackground>
+            <version>1.0.0</version>
+        </BroSolutions_CustomBackground>
+    </modules>
+    <global>
+        <resources>
+            <brosolutions_custombackground_setup>
+                <setup>
+                    <module>BroSolutions_CustomBackground</module>
+                    <class>BroSolutions_CustomBackground_Model_Resource_Setup</class>
+                </setup>
+            </brosolutions_custombackground_setup>
+        </resources>
+        <blocks>
+            <brosolutions_custombackground>
+                <class>BroSolutions_CustomBackground_Block</class>
+            </brosolutions_custombackground>
+        </blocks>
+        <helpers>
+            <brosolutions_custombackground>
+                <class>BroSolutions_CustomBackground_Helper</class>
+            </brosolutions_custombackground>
+        </helpers>
+        <models>
+            <brosolutions_custombackground>
+                <class>BroSolutions_CustomBackground_Model</class>
+                <resourceModel>brosolutions_custombackground_resource</resourceModel>
+            </brosolutions_custombackground>
+            <brosolutions_custombackground_resource>
+                <class>BroSolutions_CustomBackground_Model_Resource</class>
+                <entities>
+                    <background>
+                        <table>brosolutions_custombackground_background</table>
+                    </background>
+                    <background_store>
+                        <table>brosolutions_custombackground_background_store</table>
+                    </background_store>
+                </entities>
+            </brosolutions_custombackground_resource>
+        </models>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <brosolutions_custombackground>
+                    <file>brosolutions_custombackground.xml</file>
+                </brosolutions_custombackground>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <BroSolutions_CustomBackground>
+                    <files>
+                        <default>BroSolutions_CustomBackground.csv</default>
+                    </files>
+                </BroSolutions_CustomBackground>
+            </modules>
+        </translate>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <BroSolutions_CustomBackground before="Mage_Adminhtml">BroSolutions_CustomBackground_Adminhtml</BroSolutions_CustomBackground>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <brosolutions_custombackground>
+                <use>standard</use>
+                <args>
+                    <module>BroSolutions_CustomBackground</module>
+                    <frontName>brosolutions_custombackground</frontName>
+                </args>
+            </brosolutions_custombackground>
+        </routers>
+        <layout>
+            <updates>
+                <brosolutions_custombackground>
+                    <file>brosolutions_custombackground.xml</file>
+                </brosolutions_custombackground>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <BroSolutions_CustomBackground>
+                    <files>
+                        <default>BroSolutions_CustomBackground.csv</default>
+                    </files>
+                </BroSolutions_CustomBackground>
+            </modules>
+        </translate>
+    </frontend>
+    <default>
+        <brosolutions_custombackground>
+            <background>
+                <breadcrumbs>1</breadcrumbs>
+            </background>
+        </brosolutions_custombackground>
+    </default>
+</config>
